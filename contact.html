@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- make sure to update these css links so that they link to the right stylesheets -->
+    <!-- you put the bootstrap link first so that if you want to add your own style to bootstrap you can.
+        this basically telling the browser "first style the html with bootstrap, then over-ride the bootsrap styles
+        with my stylesheet where applicable"  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <title>Bootstrap-Portfolio</title>
+
+</head>
+
+<body>
+
+    <div class="row" id="naviGator">
+
+        <div class="col-3">
+            <!-- this is an empty column for formatting -->
+        </div>
+
+        <div class="col-3">
+
+            <header>
+                <h1>
+                    Nathaniel Holdsworth
+                </h1>
+            </header>
+
+        </div>
+
+        <div class="col-3">
+
+            <ul class="directory">
+                <!-- these are the buttons to go to the different pages on my site -->
+                <!-- I don't understand why I have to put them as a list instead of just anchor points with hrefs... -->
+                <li>
+                    <a href="index.html">About</a>
+                </li>
+
+                <li>|</li>
+
+                <li>
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+
+                <li>|</li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="col-3">
+            <!-- this is an empty column for formatting purposes -->
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-3">
+            <!-- this is am empty column for formatting purposes -->
+        </div>
+
+
+        <div class="col-6">
+
+            <!-- This div is the container for my image and text -->
+            <div class="container" id="page-contents">
+
+                <div class="row">
+
+                    <div class="col-12">
+
+                        <header class="subheader1">
+                            
+                            <h2>
+                                Contact
+                            </h2>
+
+                        </header>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-12">
+
+                        <form action="https://formspree.io/nholdsworth@me.com" method="POST" id="form-1">
+
+                            <p>Name</p>
+
+                            <input class="text-box" type="text" name="full-name" placeholder="  John Hancock">
+
+                            <br><br>
+
+                            <p>Email</p>
+
+                            <input class="text-box" type="text" name="email" placeholder="  J.Hancock@notfngmail.com">
+
+                            <br><br>
+
+                            <p>Message</p>
+
+                            <textarea class="text-box" id="message-box" type="text" name="message"></textarea>
+
+                            <br><br>
+
+                            <input id="submit" type="submit" value="submit">
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-3">
+            <!-- this is an empty colum for formatting purposes -->
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-12">
+
+            <footer>
+                copyright &copy;
+            </footer>
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

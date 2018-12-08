@@ -1,0 +1,227 @@
+body{
+    background-image: url("../../../Basic-Portfolio/assets/images/backgrounds/retina_wood/retina_wood.png");
+    margin-bottom: 5em;
+}
+
+
+#naviGator{
+    background-color: #ffffff;
+    border-bottom: solid;
+    border-bottom-width: 0.0625em;
+    border-color: #808080;
+    overflow: auto;
+    z-index: 1;
+}
+
+#name-background:{
+    position: relative;
+    margin: 0 auto;
+    float:left;
+    padding: 1em;
+    background-color:#4aaaa5;
+    font-size: 1.8em; 
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 4px 0px 0px 0px #20202069;
+    border: .00625em solid #054744; 
+
+}
+
+
+#name{
+    z-index: 3;
+    position: absolute;
+}
+
+h1{
+    margin: 0 auto;
+    float:left;
+    padding: 1em;
+    background-color:#4aaaa5;
+    font-size: 1.8em; 
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 4px 0px 0px 0px #20202069;
+    border: .00625em solid #054744; 
+    font-family: 'Amatic SC', cursive; 
+
+}
+
+.directory{
+    /* float: right; */
+    color: #0cb9e8;
+    margin-top: 2em;
+}
+
+.directory li{
+    font-size: 1.2em;
+    list-style: none;
+    display: inline-block;
+    color: #b8ffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0em 0.5em 0em;
+}
+
+.directory a{
+    color: #0cb9e8;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.directory a:hover{
+    color: #f700ff;
+}
+
+#page-contents{
+    background-color: #ffffff;
+    /* margin: auto; */
+    margin-top: 2em;
+    /* width: 58em;  */
+    padding: 1em;
+    border-style: solid;
+    border-width: .0625em;
+    border-color: #666666;
+    overflow: auto;
+    box-shadow: 10px 8px 2px 2px #20202069; 
+    border-radius: 4px;
+}
+
+#page-contents p{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: .95em;
+}
+
+.subheader1{
+    border-bottom: solid;
+    color: #cccccc;
+    /* margin-bottom: 0.75em; */
+}
+
+h2{
+    color: #4aaaa5;
+    font-size: 2em;
+    margin-bottom: 0.75em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img{
+    width: 15.675em;
+    height: 12.5em;
+
+}
+
+#pic1{
+    float: left;
+    margin: 1em;
+    margin-top: 1em;
+}
+
+#p1{
+    margin-top: 1em;
+}
+
+footer{
+    font-size: x-small;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: solid;
+    border-top-width: thick;
+    border-color: #808080;
+    text-align: center;
+    color: #ffffff;
+    background-color: #0cb9e8;
+    padding: 2em;
+    padding-top:2em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+    /* margin-top: 28em; */
+}
+
+/* CONTACT */
+
+#contact-box{
+    background-color: #ffffff;
+    margin: auto;
+    margin-top: 2em;
+    width: 58em; 
+    padding: 1em;
+    border-style: solid;
+    border-width: .0625em;
+    border-color: #666666;
+    overflow: auto;
+}
+
+#form-1{
+    margin-top: 2em;
+}
+
+form p{
+    text: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666666;
+}
+
+.text-box {
+    width: 100%;
+    padding: 0.75em 0em;
+}
+#message-box{
+    height: 12.5em;
+    }
+
+#submit{
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 0.5em 2em;
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: #0cb9e8;
+}
+#submit:active{
+    background-color: #2d6e7f;
+}
+
+/*PORTFOLIO STYLE */
+
+/*this is the labels of the pictures*/
+.label{
+    position: relative;
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffffff;
+    background-color: #4aaaa5;
+    text-align: center;
+    padding: 0.8em 0em;
+    width: 100%;
+    bottom: 0.5em;
+}
+
+/* this is my container class for the image and the text divs  */
+.thumbnail{
+    float: left;
+    /* position: relative; */
+    margin: 3em 4em 0.5em 0em;
+    border-style: solid;
+    border-width: .0625em;
+    border-color: #666666;
+    overflow: auto;
+    /* not sure why my images are not filling the divs... */
+    background-image: cover;
+    /* width: 50%; */
+}
+
+/* this makes the image go behind the text banner */
+.gallery img{
+    z-index:-1;
+}
+
+#pic2, #pic3, #pic4{
+    transform: rotate(90deg);
+    /* not sure why my images are not filling the divs... */
+    object-fit: contain;   
+}
