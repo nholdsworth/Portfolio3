@@ -1,8 +1,7 @@
 body{
-    background-image: url("../../../Basic-Portfolio/assets/images/backgrounds/retina_wood/retina_wood.png");
+    background-image: url("../images/amazing-ocean-background-pictures-2048x1280.jpg");
     margin-bottom: 5em;
 }
-
 
 #naviGator{
     background-color: #ffffff;
@@ -13,53 +12,45 @@ body{
     z-index: 1;
 }
 
-#name-background:{
-    position: relative;
-    margin: 0 auto;
-    float:left;
-    padding: 1em;
-    background-color:#4aaaa5;
-    font-size: 1.8em; 
-    text-align: center;
-    color: #ffffff;
-    box-shadow: 4px 0px 0px 0px #20202069;
-    border: .00625em solid #054744; 
-
-}
-
-
 #name{
     z-index: 3;
-    position: absolute;
 }
 
 h1{
-    margin: 0 auto;
+    margin: 6px auto;
     float:left;
     padding: 1em;
     background-color:#4aaaa5;
-    font-size: 1.8em; 
+    font-size: 1.8em;
+    font-weight: bold;
     text-align: center;
     color: #ffffff;
-    box-shadow: 4px 0px 0px 0px #20202069;
-    border: .00625em solid #054744; 
-    font-family: 'Amatic SC', cursive; 
+    box-shadow: 4px 4px 0px 0px #20202069;
+    border: .0325em solid #054744; 
+    font-family: 'Amatic SC', cursive;
+    border-radius: 3px;
+    
 
 }
 
 .directory{
     /* float: right; */
-    color: #0cb9e8;
+    color: #0f90b4;
     margin-top: 2em;
+    font: bolder;
+    font-size: 1em;
+    font-weight: bold;
 }
 
 .directory li{
-    font-size: 1.2em;
+    font-size: 1.8em;
     list-style: none;
     display: inline-block;
     color: #b8ffff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Amatic SC', cursive;
     margin: 0em 0.5em 0em;
+    /* text-shadow: 1px 1px rgba(0, 0, 0, 0.788); */
+    font: bolder;
 }
 
 .directory a{
@@ -72,36 +63,66 @@ h1{
     color: #f700ff;
 }
 
+.mouseover{
+    background-color: #f700ff;
+    border-radius: 20%;
+    color: white;  
+}
+
+#page-contents-background{
+    background-color: #3c6d79;
+    margin-top: 2em;
+    padding: 1em;
+    border-style: inset;
+    border-width: .0625em;
+    border-color: #838181;
+    overflow: auto;
+    border-radius: 25px;
+    position:absolute;
+    z-index: 1;
+    width:96%;
+    height: 95%;
+    box-shadow: 10px 8px 2px 2px #000000a2;
+    opacity: 0.77;
+    background-blend-mode: exclusion;
+    
+}
+
 #page-contents{
-    background-color: #ffffff;
+    background-color: transparent;
     /* margin: auto; */
     margin-top: 2em;
     /* width: 58em;  */
     padding: 1em;
-    border-style: solid;
-    border-width: .0625em;
-    border-color: #666666;
+    /* border-style: solid;
+    border-width: .0625em; */
     overflow: auto;
-    box-shadow: 10px 8px 2px 2px #20202069; 
     border-radius: 4px;
+    position: relative;
+    z-index: 2;
+    background-blend-mode: exclusion;
 }
 
 #page-contents p{
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: .95em;
+    font-family: 'Amatic SC', cursive;
+    line-height: 1.5em;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 1000;
 }
 
 .subheader1{
     border-bottom: solid;
-    color: #cccccc;
+    color: whitesmoke;
     /* margin-bottom: 0.75em; */
 }
 
 h2{
-    color: #4aaaa5;
+    color:  whitesmoke;
     font-size: 2em;
     margin-bottom: 0.75em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
 }
 
 img{
@@ -112,8 +133,10 @@ img{
 
 #pic1{
     float: left;
-    margin: 1em;
+    margin: 2em 1.5em 0.5em 1em;
     margin-top: 1em;
+    border-radius: 4px;
+    box-shadow: 4px 4px rgba(48, 47, 47, 0.431)
 }
 
 #p1{
@@ -121,21 +144,20 @@ img{
 }
 
 footer{
-    font-size: x-small;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-family: 'Fredericka the Great', cursive;
     border-top: solid;
     border-top-width: thick;
-    border-color: #808080;
+    border-color: #6d6b6b;
     text-align: center;
-    color: #ffffff;
-    background-color: #0cb9e8;
-    padding: 2em;
-    padding-top:2em;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 0.75em;
+    padding-top:1em;
     position: fixed;
     width: 100%;
     bottom: 0;
-
-    /* margin-top: 28em; */
+    z-index: 4;
 }
 
 /* CONTACT */
@@ -158,13 +180,14 @@ footer{
 
 form p{
     text: 1em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Amatic SC', cursive;
     color: #666666;
 }
 
 .text-box {
     width: 100%;
     padding: 0.75em 0em;
+    border-radius: 25px;
 }
 #message-box{
     height: 12.5em;
@@ -175,8 +198,10 @@ form p{
     color: #ffffff;
     padding: 0.5em 2em;
     font-size: 1.1em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 1000;
     cursor: pointer;
+    border-radius: 25px;
 }
 
 #submit:hover{
@@ -188,11 +213,12 @@ form p{
 
 /*PORTFOLIO STYLE */
 
+
 /*this is the labels of the pictures*/
 .label{
     position: relative;
     font-size: 1.5em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Amatic SC', cursive;
     color: #ffffff;
     background-color: #4aaaa5;
     text-align: center;
@@ -205,14 +231,15 @@ form p{
 .thumbnail{
     float: left;
     /* position: relative; */
-    margin: 3em 4em 0.5em 0em;
-    border-style: solid;
+    margin: 3em 2em 1em 3em;
+    border-style: ridge;
     border-width: .0625em;
-    border-color: #666666;
+    border-color: #f3eeee;
     overflow: auto;
     /* not sure why my images are not filling the divs... */
     background-image: cover;
-    /* width: 50%; */
+    border-radius: 15px;
+    box-shadow: 5px 5px rgba(68, 66, 66, 0.52);
 }
 
 /* this makes the image go behind the text banner */
@@ -220,8 +247,8 @@ form p{
     z-index:-1;
 }
 
-#pic2, #pic3, #pic4{
+/* #pic4{
     transform: rotate(90deg);
     /* not sure why my images are not filling the divs... */
     object-fit: contain;   
-}
+} */

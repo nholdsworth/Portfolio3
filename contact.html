@@ -12,7 +12,10 @@
         with my stylesheet where applicable"  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Fredericka+the+Great" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
 
     <title>Bootstrap-Portfolio</title>
 
@@ -22,13 +25,13 @@
 
     <div class="row" id="naviGator">
 
-        <div class="col-3">
+        <div class="col-lg-3 col-med-0 col-sm-0">
             <!-- this is an empty column for formatting -->
         </div>
 
-        <div class="col-3">
+        <div class="col-sm-12 col-med-12 col-lg-3">
 
-            <header>
+            <header id="name">
                 <h1>
                     Nathaniel Holdsworth
                 </h1>
@@ -36,32 +39,32 @@
 
         </div>
 
-        <div class="col-3">
+        <div class="col-sm-12 col-med-12 col-lg-3">
 
             <ul class="directory">
                 <!-- these are the buttons to go to the different pages on my site -->
                 <!-- I don't understand why I have to put them as a list instead of just anchor points with hrefs... -->
                 <li>
-                    <a href="index.html">About</a>
+                    <a class="nav" href="index.html">About</a>
                 </li>
 
                 <li>|</li>
 
                 <li>
-                    <a href="portfolio.html">Portfolio</a>
+                    <a class="nav" href="portfolio.html">Portfolio</a>
                 </li>
 
                 <li>|</li>
 
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a class="nav" href="contact.html">Contact</a>
                 </li>
 
             </ul>
 
         </div>
 
-        <div class="col-3">
+        <div class="col-lg-3 col-med-0 col-sm-0">
             <!-- this is an empty column for formatting purposes -->
         </div>
 
@@ -69,12 +72,14 @@
 
     <div class="row">
 
-        <div class="col-3">
+        <div class="col-lg-3 col-med-0 col-sm-0">
             <!-- this is am empty column for formatting purposes -->
         </div>
 
+        <div class="col-sm-12 col-lg-6">
 
-        <div class="col-6">
+            <!-- This div is for the mildly-transparent background -->
+            <div id="page-contents-background"></div>
 
             <!-- This div is the container for my image and text -->
             <div class="container" id="page-contents">
@@ -84,7 +89,7 @@
                     <div class="col-12">
 
                         <header class="subheader1">
-                            
+
                             <h2>
                                 Contact
                             </h2>
@@ -98,18 +103,18 @@
                 <div class="row">
 
                     <div class="col-12">
-
+                        <!-- formspree.io makes it so this form actually works.  My tutor showed it to me -->
                         <form action="https://formspree.io/nholdsworth@me.com" method="POST" id="form-1">
 
                             <p>Name</p>
 
-                            <input class="text-box" type="text" name="full-name" placeholder="  John Hancock">
+                            <input class="text-box" type="text" name="full-name" placeholder="     This is the place where you can type your name">
 
                             <br><br>
 
                             <p>Email</p>
 
-                            <input class="text-box" type="text" name="email" placeholder="  J.Hancock@notfngmail.com">
+                            <input class="text-box" type="text" name="email" placeholder="     youremailaddress@where-ever.com">
 
                             <br><br>
 
@@ -149,10 +154,8 @@
 
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
+    <script src="assets/javascript/portfolio.js"></script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 

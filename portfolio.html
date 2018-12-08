@@ -12,9 +12,12 @@
         with my stylesheet where applicable"  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Fredericka+the+Great" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
 
-    <title>Bootstrap-Portfolio</title>
+    <title>Portfolio 3.0</title>
 
 </head>
 
@@ -26,9 +29,9 @@
             <!-- this is an empty column for formatting -->
         </div>
 
-        <div class="col-sm-12 col-med-6 col-lg-3">
+        <div class="col-sm-12 col-med-12 col-lg-3">
 
-            <header>
+            <header id="name">
                 <h1>
                     Nathaniel Holdsworth
                 </h1>
@@ -36,25 +39,25 @@
 
         </div>
 
-        <div class="col-sm-12 col-med-6 col-lg-3">
+        <div class="col-sm-12 col-med-12 col-lg-3">
 
             <ul class="directory">
                 <!-- these are the buttons to go to the different pages on my site -->
                 <!-- I don't understand why I have to put them as a list instead of just anchor points with hrefs... -->
                 <li>
-                    <a href="index.html">About</a>
+                    <a class="nav" href="index.html">About</a>
                 </li>
 
                 <li>|</li>
 
                 <li>
-                    <a href="portfolio.html">Portfolio</a>
+                    <a class="nav" href="portfolio.html">Portfolio</a>
                 </li>
 
                 <li>|</li>
 
                 <li>
-                    <a href="contact.html">Contact</a>
+                    <a class="nav" href="contact.html">Contact</a>
                 </li>
 
             </ul>
@@ -67,15 +70,18 @@
 
     </div>
 
-    <!-- This div is the container for my image and text -->
     <div class="row">
 
         <div class="col-lg-3 col-med-0 col-sm-0">
             <!-- this is am empty column for formatting purposes -->
         </div>
 
-        <div class="col-sm-12 col-med-12 col-lg-6">
+        <div class="col-sm-12 col-lg-6">
 
+            <!-- This div is for the mildly-transparent background -->
+            <div id="page-contents-background"></div>
+
+            <!-- This div is the container for my image and text -->
             <div class="container" id="page-contents">
 
                 <header class="subheader1">
@@ -92,12 +98,12 @@
 
                         <div class="thumbnail">
 
-                            <a href="http://www.google.com">
+                            <a href="https://nholdsworth.github.io/Class-Project-1/index.html">
                                 <!-- why do these break when I resize to 275/205? -->
-                                <img id="pic2" src="assets/images/sharon-and-kaitlyn.jpeg" alt="Sharon and Kaitlyn">
+                                <img id="pic2" src="assets/images/tvdinner.jpeg" alt="its a tv dinner">
 
                                 <p class="label">
-                                    Sharon
+                                    Dinner and a Movie
                                 </p>
 
                             </a>
@@ -110,12 +116,12 @@
 
                         <div class="thumbnail">
 
-                            <a href="http://www.google.com">
+                            <a href="https://nholdsworth.github.io/Giftastic/">
 
-                                <img id="pic3" src="assets/images/baseball-game2018.jpeg" alt="Sharon and I at a Mariners game">
+                                <img id="pic3" src="assets/images/leap-of-faith.jpg" alt="Sharon and I at a Mariners game">
 
                                 <p class="label">
-                                    Baseball
+                                    Giftastic
                                 </p>
 
                             </a>
@@ -134,10 +140,10 @@
 
                             <div class="thumbnail">
 
-                                <img id="pic4" src="assets/images/professional1.jpeg" alt="my linkedin picture">
+                                <img id="pic4" src="assets/images/abandoned-rail-train-in-the-forest_vnlqnbl2vl__F0000.png" alt="my linkedin picture">
 
                                 <p class="label">
-                                    work
+                                    Train Schedule
                                 </p>
 
                             </div>
@@ -152,10 +158,10 @@
 
                             <a href="http://www.google.com">
 
-                                <img id="pic5" src="assets/images/mckinley&mina.JPG" alt="My nephew mckinley and my neice mina">
+                                <img id="pic5" src="assets/images/90's-hip-hop.png" alt="My nephew mckinley and my neice mina">
 
                                 <p class="label">
-                                    family
+                                    Hip-Hop Trivia
                                 </p>
 
                             </a>
@@ -172,12 +178,12 @@
 
                         <div class="thumbnail">
 
-                            <a href="http://www.google.com">
+                            <a href="https://nholdsworth.github.io/unit-4-game/">
 
-                                <img id="pic6" src="assets/images/the-cuddliest-thing-ever.jpeg" alt="Nathaniel Holdsworth">
+                                <img id="pic6" src="assets/images/1200px-Cristales_cueva_de_Naica.JPG" alt="Nathaniel Holdsworth">
 
                                 <p class="label">
-                                    Bob
+                                    Crystal Collector
                                 </p>
 
                             </a>
@@ -188,7 +194,7 @@
 
                     <div class="col-lg-6">
 
-                        This column left blank for formatting purposes
+                        <!-- This column left blank for formatting purposes -->
 
                     </div>
 
@@ -224,10 +230,8 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
+    <script src="assets/javascript/portfolio.js"></script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
